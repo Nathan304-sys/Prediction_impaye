@@ -71,7 +71,7 @@ st.markdown("""
 @st.cache_data
 def load_data(path):
     return pd.read_excel(path)
-../base/base_leasing_finale.xslx
+#../base/base_leasing_finale.xslx
 base_leasing = load_data("../base/base_leasing_finale.xslx")
 
 filename_joblib = 'H:/ISE3_Nathan/GT/gt/Notre_code/Modelisation/logistic_regression_model.joblib'
