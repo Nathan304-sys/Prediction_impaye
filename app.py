@@ -233,8 +233,8 @@ if page == "Prédiction":
         @st.cache_resource
         def load_model(path):
             return joblib.load(path)
-
-        loaded_model_joblib = load_model("../model/logistic_regression_model.joblib")
+         
+        loaded_model_joblib = load_model("blob:https://github.com/99e56fa0-3268-4104-b802-c9ba980c4eed")
         #print("Modèle chargé avec joblib.")
         y_pred_loaded = model_final(loaded_model_joblib, df_prediction_dummies)
         
