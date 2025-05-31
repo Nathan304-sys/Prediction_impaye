@@ -71,8 +71,8 @@ st.markdown("""
 @st.cache_data
 def load_data(path):
     return pd.read_excel(path)
-
-base_leasing = load_data("base_leasing_finale.xlsx")
+../base/base_leasing_finale.xslx
+base_leasing = load_data("../base/base_leasing_finale.xslx")
 
 filename_joblib = 'H:/ISE3_Nathan/GT/gt/Notre_code/Modelisation/logistic_regression_model.joblib'
 
@@ -233,7 +233,7 @@ if page == "Prédiction":
         def load_model(path):
             return joblib.load(path)
 
-        loaded_model_joblib = load_model("H:/ISE3_Nathan/GT/gt/Notre_code/Modelisation/logistic_regression_model.joblib")
+        loaded_model_joblib = load_model("../model/logistic_regression_model.joblib")
         #print("Modèle chargé avec joblib.")
         y_pred_loaded = model_final(loaded_model_joblib, df_prediction_dummies)
         
